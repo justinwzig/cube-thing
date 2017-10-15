@@ -1,0 +1,29 @@
+{
+  "name": "justinwzig.github.io",
+  "version": "1.0.0",
+  "description": "Personal Website",
+  "main": "index.js",
+  "dependencies": {
+    
+  },
+  "devDependencies": {
+    "http-server": "^0.10.0"
+  },
+  "scripts": {
+    "test": "gulp"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/justinwzig/justinwzig.github.io.git"
+  },
+  "keywords": [
+    "personal",
+    "website"
+  ],
+  "author": "Justin Ziegelmueller",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/justinwzig/justinwzig.github.io/issues"
+  },
+  "homepage": "https://github.com/justinwzig/justinwzig.github.io#readme"
+}
