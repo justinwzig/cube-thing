@@ -78,9 +78,6 @@ function onWindowResize(){
   scene.remove(camera);
   aspectRatio = window.innerWidth/window.innerWidth;
   camera = new THREE.OrthographicCamera(-aspectRatio*viewSize/2, aspectRatio*viewSize/2, viewSize/2,-viewSize/2, -1000,  1000); //centered around the origin
-  //camera.position.x = 2.5;
-  //camera.position.y = -2.5;
-  //camera.position.z = -2.5;
   camera.updateProjectionMatrix();
   renderer.setSize( window.innerWidth, window.innerWidth );
 }
@@ -104,8 +101,6 @@ function onDocumentMouseDown(){
   outlineCube.rotation.x=cube.rotation.x;
   outlineCube.rotation.z=cube.rotation.z;
   scene.remove(cube);
-  
-
 }
 
 
