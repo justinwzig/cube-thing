@@ -32,12 +32,12 @@ function init(){
   //cube
   var geometry = new THREE.BoxGeometry(2, 2, 2);
   var material = new THREE.MeshFaceMaterial([
-    new THREE.MeshBasicMaterial({color: 0x5559ff}),
-    new THREE.MeshBasicMaterial({color: 0xff0000}),
-    new THREE.MeshBasicMaterial({color: 0x0000ff}),
-    new THREE.MeshBasicMaterial({color: 0xffff00}),
-    new THREE.MeshBasicMaterial({color: 0x00ffff}),
-    new THREE.MeshBasicMaterial({color: 0xff00ff})
+    new THREE.MeshBasicMaterial({color: 0xCC3333}),
+    new THREE.MeshBasicMaterial({color: 0xCC3333}),
+    new THREE.MeshBasicMaterial({color: 0x339999}),
+    new THREE.MeshBasicMaterial({color: 0x339999}),
+    new THREE.MeshBasicMaterial({color: 0xFF9933}),
+    new THREE.MeshBasicMaterial({color: 0xFF9933}),
   ]);
   cube = new THREE.Mesh(geometry,material);
   scene.add(cube);
@@ -104,7 +104,6 @@ function onDocumentMouseDown(){
   outlineCube.rotation.x=cube.rotation.x;
   outlineCube.rotation.z=cube.rotation.z;
   scene.remove(cube);
-
   
 
 }
@@ -112,6 +111,7 @@ function onDocumentMouseDown(){
 
 function rotateCube(){
   cube.rotation.y += 0.02;
+  cube.scale.set(cube.scale.x += 0.001, cube.scale.y += 0.001, cube.scale.z += 0.001)
 }
 
 
