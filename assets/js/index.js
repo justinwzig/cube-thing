@@ -5,6 +5,7 @@ var cube, baseX, baseY, baseZ, spin;
 var outlineCube;
 var camera, renderer, aspectRatio;
 var mouse, raycaster;
+var speed;
 
 init();
 animate();
@@ -13,6 +14,8 @@ function init(){
   //attach to html
   container = document.createElement('div');
   document.body.appendChild(container);
+
+  speed=0.02;
 
   //window stuff
   viewSize=25;
@@ -105,7 +108,7 @@ function onDocumentMouseDown(){
 
 
 function rotateCube(){
-  cube.rotation.y += 0.02;
+  cube.rotation.y += speed;
   cube.scale.set(cube.scale.x += 0.001, cube.scale.y += 0.001, cube.scale.z += 0.001)
 }
 
